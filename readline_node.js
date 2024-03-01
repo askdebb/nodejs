@@ -1,5 +1,3 @@
-// const EventEmitter = require('events');
-
 
 const readline = require('readline');
 const rl =    readline.createInterface({
