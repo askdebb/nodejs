@@ -1,4 +1,4 @@
-const tutorial = require('./tutorial');
+const tutorial = require('../../tutorial');
 const EventEmitter = require('events');
 
 const eventEmitter = new EventEmitter();
