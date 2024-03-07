@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Static</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container sign-in">
+        <h1>Locals Data Form</h1>
+        <form action="/" method="POST" id="form">
+            <div class="name-div">
+                <label for="name">Name: </label> 
+                <input type="text" name="name" id="name"/>
+            </div>
+            <div class="gender-div">
+                <label for="gender">Choose Gender: </label>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="streetName-div">
+                <label for="streetName">Street Name: </label>
+                <input type="text" name="streetName" id="streetName"/>
+            </div>
+            <div class="fruits-div">
+                <label for="fruits">Favourite Fruits: </label>
+                <input type="text" name="fruits" id="fruits"/>
+            </div>
+            <div class="gpsPost-div">
+                <label for="gpsPost">Digital Address:</label>
+                <input type="text" name="gpsPost" id="gpsPost"/>
+            </div>
+            <input type="submit" onclick="collectData()" id="submit-btn" value="Submit"/>
+            
+        </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

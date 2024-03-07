@@ -1,0 +1,4 @@
+{"value":{"name":"James","gender":"Male","streetName":"nanakrom","fruits":"guava","gpsPost":"melcom"}}{"value":{"name":"James","gender":"Male","streetName":"nanakrom","fruits":"guava","gpsPost":"melcom"}}
+ {"value":{"name":"Innocent","gender":"Male","streetName":"","fruits":"","gpsPost":""},"error":{"_original":{"name":"Innocent","gender":"Male","streetName":"","fruits":"","gpsPost":""},"details":[{"message":"\"streetName\" is not allowed to be empty","path":["streetName"],"type":"string.empty","context":{"label":"streetName","value":"","key":"streetName"}}]}}
+ {"value":{"name":"uTorrent","gender":"Female","streetName":"adjiringanor street","fruits":"pineapple, orange","gpsPost":"gd-343-3234"}}
+ {"value":{"name":"Halland","gender":"Male","streetName":"man city","fruits":"goals","gpsPost":"uk"}}

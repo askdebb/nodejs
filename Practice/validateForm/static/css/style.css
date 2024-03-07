@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e7e3e3;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+.sign-ins {
+    margin: 40px auto;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555454;
+    font-weight: bolder;
+    margin: 40px 0 20px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #9b9898;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first-p {
+    text-align: center;
+    background-color: #80f389;
+    color: #524e4e;
+    /*margin: 0 auto; */
+    padding: 20px 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
+p {
+    margin-bottom: 30px;
+}
+
+p, ul > li {
+    color: #eee7e7;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f25e7;
+    margin: 5px;
+    padding: 5px;
+}
+form {
+    width: 70%;
+    background-color: #d1cfcf;
+    margin: 40px auto;
+    padding: 20px 30px;
+    
+}
+
+.name-div,.gender-div,
+.streetName-div,.fruits-div, .gpsPost-div  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+input[type=text], #gender{
+    width: 100%;
+    height: 20px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+
+
+#submit-btn {
+    padding: 7px 10px;
+    font-size: 13px;
+    margin-left: 10px;
+    border: none;
+    background-color: #555454;
+    color: #dfdfdf;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #757474;
+}
+
+
+label {
+    margin-bottom: 3px;
+}
+
