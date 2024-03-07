@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const Joi = require('joi');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -7,7 +8,7 @@ const app = express();
 // middleware
 app.use('/public', express.static(path.join(__dirname,'static')));
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname,'static','index.html'));
@@ -32,10 +33,21 @@ app.get('/example/:name/:age', (req,res) => {
 });
 
 //post routes
+
+const schema = Joi.object().keys({
+    email : Joi.string().trim().email().required(),
+    password: Joi.string().min(5).max(10).required()
+});
+
 app.post('/', (req,res) => {
-    console.log(req.body);
+    // console.log(req.body);
+
+    const validation = schema.validate(req.body);
+
+    console.log(validation);
+    res.sendFile(path.join(__dirname, 'static', 'index.html'));
     //database work here
-    res.json({success : true });
+    // res.json({success : true });
 });
 
 app.listen(3000);
